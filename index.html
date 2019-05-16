@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navbar</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<style type="text/css">
+		.navbar{
+			background-color: black;
+			overflow: hidden;
+			width: 100%;
+
+		}
+		.navbar a{
+			float: left;
+			padding: 14px 16px;
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+		}
+		.dropdown {
+  float: right;
+  position: absolute;
+  right: 70px;
+  
+}
+
+.dropbtn{
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+}
+.navbar a:hover{
+  background-color: #bbb;
+}
+.active{
+	background-color: #4CAF50;
+}
+.dropdown:hover .dropbtn{
+	background-color: #bbb;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+		
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<a href="#" class="active">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+		<a href="#">Link 4</a>
+		<div class="dropdown">
+			<button class="dropbtn"><i class="fas fa-bars"></i></button>
+			<div class="dropdown-content">
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+			</div>
+		</div>
+	</div>
+	<div><p>A key reason for Java’s success is its agility. Since its original 1.0 release, Java has
+continually adapted to changes in the programming environment and to changes in the
+way that programmers program. Most importantly, it has not just followed the trends, it has
+helped create them. Java’s ability to accommodate the fast rate of change in the computing
+world is a crucial part of why it has been and continues to be so successful.
+Since this book was first published in 1996, it has gone through several editions, each
+reflecting the ongoing evolution of Java. This is the Ninth edition, and it has been updated
+for Java SE 8 (JDK 8). As a result, this edition of the book contains a substantial amount of
+new material because Java SE 8 adds several new features to the Java language. The most
+important is the lambda expression, which introduces an entirely new syntax element and
+fundamentally increases the expressive power of the language. Because the impact of
+lambda expressions is so significant, an entire chapter is devoted to them. Furthermore,
+examples of their use are found elsewhere in the book. The lambda expression was also the
+catalyst for other new features. One is the stream library in java.util.stream, which supports
+pipeline operations on data. It too has an entire chapter devoted to it. Another is the
+default method, which makes it possible to add default functionality to an interface.
+Features such as repeating and type annotations further expand the power of Java. Java
+SE 8 also makes significant enhancements to the Java API library, several of which are
+described in this book.
+Another important addition to this edition of the book is coverage of JavaFX, Java’s new
+GUI framework. Because of the significant role that JavaFX is expected to play in the way
+Java applications are designed, three new chapters are devoted to it. Simply put, experience
+with JavaFX is something that Java programmers need. An additional chapter about Swing
+has also been included that discusses menus. Although Swing may ultimately be replaced by
+JavaFX, it is (at the time of this writing) still the most widely used Java GUI framework.
+Thus, expanded coverage was warranted. Finally, many small updates have been made
+throughout the book.
+This book is a comprehensive guide to the Java language, describing its syntax, keywords,
+and fundamental programming principles. Significant portions of the Java API library are
+also examined. The book is divided into five parts, each focusing on a different aspect of
+the Java programming environment.
+Part I presents an in-depth tutorial of the Java language. It begins with the basics,
+including such things as data types, operators, control statements, and classes. It then
+moves on to inheritance, packages, interfaces, exception handling, and multithreading.
+Next, it describes annotations, enumerations, autoboxing, and generics. I/O and applets
+are also introduced. The final chapter in Part I covers lambda expressions. As mentioned,
+the lambda expression is the single most important new feature in Java SE 8.
+Part II examines key aspects of Java’s standard API library. Topics include strings, I/O,
+networking, the standard utilities, the Collections Framework, applets, the AWT, event
+handling, imaging, concurrency (including the Fork/Join Framework), regular
+expressions, and the new stream library.
+Part III offers three chapters that introduce Swing.
+Part IV presents three chapters that introduce JavaFX.
+Part V contains two chapters that show examples of Java in action. The first discusses
+Java Beans. The second presents an introduction to servlets.Prior to C, programmers usually had to choose between languages that optimized one
+set of traits or the other. For example, although FORTRAN could be used to write fairly
+efficient programs for scientific applications, it was not very good for system code. And
+while BASIC was easy to learn, it wasn’t very powerful, and its lack of structure made its
+usefulness questionable for large programs. Assembly language can be used to produce
+highly efficient programs, but it is not easy to learn or use effectively. Further, debugging
+assembly code can be quite difficult.
+Another compounding problem was that early computer languages such as BASIC,
+COBOL, and FORTRAN were not designed around structured principles. Instead, they
+relied upon the GOTO as a primary means of program control. As a result, programs
+written using these languages tended to produce “spaghetti code”—a mass of tangled
+jumps and conditional branches that make a program virtually impossible to understand.
+While languages like Pascal are structured, they were not designed for efficiency, and failed
+to include certain features necessary to make them applicable to a wide range of programs.
+(Specifically, given the standard dialects of Pascal available at the time, it was not practical
+to consider using Pascal for systems-level code.)
+So, just prior to the invention of C, no one language had reconciled the conflicting
+attributes that had dogged earlier efforts. Yet the need for such a language was pressing. By
+the early 1970s, the computer revolution was beginning to take hold, and the demand for
+software was rapidly outpacing programmers’ ability to produce it. A great deal of effort was
+being expended in academic circles in an attempt to create a better computer language.
+But, and perhaps most importantly, a secondary force was beginning to be felt. Computer
+hardware was finally becoming common enough that a critical mass was being reached. No
+longer were computers kept behind locked doors. For the first time, programmers were
+gaining virtually unlimited access to their machines. This allowed the freedom to experiment.
+It also allowed programmers to begin to create their own tools. On the eve of C’s creation,
+the stage was set for a quantum leap forward in computer languages.</p></div>
+</body>
+</html>
